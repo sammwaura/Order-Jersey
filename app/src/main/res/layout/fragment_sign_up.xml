@@ -3,12 +3,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment"
+    android:background="@color/colorPrimary">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/sign_up_cross_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:src="@mipmap/close_cross"
+            tools:layout_editor_absoluteX="311dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="255dp"
+            android:layout_height="173dp"
+            android:src="@mipmap/jersey"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="81dp" />
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_width="273dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorAccent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <EditText
+            android:id="@+id/sign_up_full_name"
+            android:layout_width="273dp"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorAccent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_width="277dp"
+            android:layout_height="39dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorAccent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <EditText
+            android:id="@+id/sign_up_confirm_password"
+            android:layout_width="274dp"
+            android:layout_height="38dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="ConfirmPassword"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorAccent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="428dp" />
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="331dp"
+            android:layout_height="36dp"
+            android:background="@color/btnPurple"
+            android:text="Sign Up!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Or"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="522dp" />
+
+        <TextView
+            android:id="@+id/sign_up_alread_have_account"
+            android:layout_width="243dp"
+            android:layout_height="23dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Already have an account?Sign In"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="540dp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
